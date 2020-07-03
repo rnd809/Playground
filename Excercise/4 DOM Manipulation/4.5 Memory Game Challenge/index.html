@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Game!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="gameHeadInfo">
+      <h1>Memory Game!</h1>
+      <button id="btnNewGame">New Game</button>
+      <h2>
+        High Score: <span id="userName">Kevin </span
+        ><span id="highScore">90</span>
+      </h2>
+      <!-- <label for="gameDifuculty"
+        >Dificulty Level:
+        <input type="range" id="gameDificulty" />
+      </label> -->
+      <h2 id="currentPlayers">Current Player: <span>Username</span></h2>
+      <h2>Your Final Score: <span id="currentScore">?</span></h2>
+      <h2>Current Clicks: <span id="currentClicks">0</span></h2>
+    </div>
+    <div id="game"></div>
+    <div id="allTimeScoresDiv">
+      <h1>All Time Scores</h1>
+      <button class="collaNow" id="btnAllTimeScores">
+        All Time Top 12 Scores
+      </button>
+      <button class="collaNow" id="btnAllTimeBottom">
+        All Time Bottom 12 Scores
+      </button>
+      <ol class="classInvi" id="olListTop">
+        <li>Polauren <span>100</span></li>
+        <li>Polauren <span>100</span></li>
+        <li>Polauren <span>100</span></li>
+        <li>Polauren <span>100</span></li>
+        <li>Polauren <span>100</span></li>
+        <li>Polauren <span>100</span></li>
+        <li>Polauren <span>100</span></li>
+        <li>Polauren <span>100</span></li>
+        <li>Polauren <span>100</span></li>
+        <li>Polauren <span>100</span></li>
+        <li>Polauren <span>100</span></li>
+        <li>Polauren <span>100</span></li>
+      </ol>
+      <ol class="classInvi" id="olListBottom">
+        <li>Polauren <span>100</span></li>
+        <li>Polauren <span>100</span></li>
+        <li>Polauren <span>100</span></li>
+        <li>Polauren <span>100</span></li>
+        <li>Polauren <span>100</span></li>
+        <li>Polauren <span>100</span></li>
+        <li>Polauren <span>100</span></li>
+        <li>Polauren <span>100</span></li>
+        <li>Polauren <span>100</span></li>
+        <li>Polauren <span>100</span></li>
+        <li>Polauren <span>100</span></li>
+        <li>Polauren <span>100</span></li>
+      </ol>
+    </div>
+
+    <div id="newGameButton" class="modal">
+      <form
+        id="formPopUp"
+        class="modal-content animate"
+        action="#"
+        method="post"
+      >
+        <!-- This is the html for the Image -->
+        <div class="imgcontainer">
+          <span class="close" title="Close Modal">&times;</span>
+          <img src="./image/tenor.gif" alt="Brain" class="avatar" />
+        </div>
+        <!-- Above is the HTML for The Image -->
+
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="uname"
+            required
+          />
+
+          <label for="country"><b>Select Your Country </b></label>
+          <br />
+          <select name="country" id="country" required>
+            <option value="">-- Country --</option>
+            <option value="DR">Dominican Republic</option>
+            <option value="JP">Japan</option>
+            <option value="USA"> United States</option>
+            <option value="SK"> South Korea</option>
+            <option value="CT">Chinese Taipei</option>
+            <option value="MEX"> Mexico</option>
+            <option value="AU">Australia</option>
+            <option value="VEN">Venezuela</option>
+            <option value="NL">Netherlands</option>
+            <option value="PR">Puerto Rico</option>
+            <option value="PAN">Panama</option>
+          </select>
+
+          <hr />
+
+          <button type="submit">Start New Game</button>
+          <hr />
+          <button type="reset" id="restatGame">Restart</button>
+          <!-- <label>
+            <input type="checkbox" checked="checked" name="remember" /> Remember
+            me
+          </label> -->
+        </div>
+
+        <!-- This is the html for the Cancel Button Inside The Form-->
+        <div class="container" style="background-color: #f1f1f1;">
+          <button id="formCancel" type="button" class="cancelbtn">
+            Cancel
+          </button>
+          <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
+        </div>
+        <!-- This is the html for the Cancel Button -->
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
