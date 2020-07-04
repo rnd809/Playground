@@ -119,5 +119,3 @@ appendedMeme.addEventListener('click', function(event) {
                 getSpan.parentElement.remove();
         }
 });
-
-// Checking Git
